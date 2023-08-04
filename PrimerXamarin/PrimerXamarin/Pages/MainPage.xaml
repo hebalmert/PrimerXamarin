@@ -1,15 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Inicio de Sesion"
              x:Class="PrimerXamarin.MainPage">
     <ContentPage.Resources>
         <ResourceDictionary>
             <!-- Creacion de Estilos para los Labels -->
-            <Style x:Key="EstiloLabel" TargetType="Label">
-                <Setter Property="FontSize" Value="20" />
-                <Setter Property = "FontAttributes" Value="Bold" />
-                <Setter Property = "TextColor" Value="DarkGray" />
-            </Style>
             <Style x:Key="BtnPrimary" TargetType="Button">
                 <Setter Property="FontSize" Value="20" />
                 <Setter Property = "FontAttributes" Value="Bold" />
@@ -36,16 +32,16 @@
         <Label HorizontalTextAlignment="Center" Style="{StaticResource EstiloLabel}"
                Text="Usuario"/>
 
-        <Entry Keyboard="Text"/>
+        <Entry Keyboard="Text" Text="{Binding NombreUsuario}"/>
 
         <Label HorizontalTextAlignment="Center" Style="{StaticResource EstiloLabel}"
                Text="Contrasena"/>
 
-        <Entry IsPassword="True"/>
+        <Entry IsPassword="True" Text="{Binding Contra}"/>
 
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-            <Button Text="Iniciar" Style="{StaticResource BtnPrimary}"/>
-            <Button Text="Registrar" Style="{StaticResource BtnSuccess}"/>
+            <Button x:Name="btnIniciar" Clicked="btnIniciar_Clicked" Text="Iniciar" Style="{StaticResource BtnPrimary}"/>
+            <Button x:Name="btnRegistrar" Clicked="btnRegistrar_Clicked" Text="Registrar" Style="{StaticResource BtnSuccess}"/>
         </StackLayout>
 
 
