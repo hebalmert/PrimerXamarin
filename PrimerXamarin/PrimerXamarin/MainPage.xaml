@@ -2,23 +2,54 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PrimerXamarin.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!-- Creacion de Estilos para los Labels -->
+            <Style x:Key="EstiloLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property = "FontAttributes" Value="Bold" />
+                <Setter Property = "TextColor" Value="DarkGray" />
+            </Style>
+            <Style x:Key="BtnPrimary" TargetType="Button">
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property = "FontAttributes" Value="Bold" />
+                <Setter Property = "TextColor" Value="White" />
+                <Setter Property = "BackgroundColor" Value="DarkBlue"/>
+            </Style>
+            <Style x:Key="BtnSuccess" TargetType="Button">
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property = "FontAttributes" Value="Bold" />
+                <Setter Property = "TextColor" Value="White" />
+                <Setter Property = "BackgroundColor" Value="DarkGreen"/>
+            </Style>
+        </ResourceDictionary>
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="Comenzar a Desarrollar" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+    </ContentPage.Resources>
+
+    <StackLayout Margin="10" VerticalOptions="Center">
+
+        <Image Source="NexxtLogo.jpeg" WidthRequest="200" HeightRequest="200" HorizontalOptions="Center"/>
+
+        <Label Text="Bienenido a la Aplicacion" Style="{StaticResource EstiloLabel}"
+               HorizontalTextAlignment="Center" FontSize="30" FontAttributes="Bold" TextColor="Black"/>
+
+        <Label HorizontalTextAlignment="Center" Style="{StaticResource EstiloLabel}"
+               Text="Usuario"/>
+
+        <Entry Keyboard="Text"/>
+
+        <Label HorizontalTextAlignment="Center" Style="{StaticResource EstiloLabel}"
+               Text="Contrasena"/>
+
+        <Entry IsPassword="True"/>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Button Text="Iniciar" Style="{StaticResource BtnPrimary}"/>
+            <Button Text="Registrar" Style="{StaticResource BtnSuccess}"/>
+        </StackLayout>
+
+
+
     </StackLayout>
 
 </ContentPage>
