@@ -2,13 +2,11 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="PrimerXamarin.Pages.PaginaRegistro">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Pagina Registro" Style="{StaticResource EstiloLabel}"
+    Title="Menu"
+    x:Class="PrimerXamarin.Pages.Menu">
+
+                <Label Text="Menu Sistema" Style="{StaticResource EstiloLabel}"
                HorizontalTextAlignment="Center" FontSize="30" FontAttributes="Bold" TextColor="Black"/>
 
-        </StackLayout>
-    </ContentPage.Content>
 </ContentPage>
 

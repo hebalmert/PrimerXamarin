@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace PrimerXamarin
+namespace PrimerXamarin.Pages
 {
     public partial class MainPage : ContentPage
     {
@@ -24,7 +24,7 @@ namespace PrimerXamarin
         {
             if (NombreUsuario == "hebalmert" && Contra == "1234")
             {
-                Application.Current.MainPage = new paginaPrincipal();
+                Application.Current.MainPage = new PagePrincipal();
             }
             else
             {

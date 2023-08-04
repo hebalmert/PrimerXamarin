@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+
 using Xamarin.Forms;
 
 namespace PrimerXamarin.Pages
 {	
-	public partial class PaginaRegistro : ContentPage
+	public partial class Menu : ContentPage
 	{	
-		public PaginaRegistro ()
+		public Menu ()
 		{
-			InitializeComponent();
+			InitializeComponent ();
 		}
 	}
 }

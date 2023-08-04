@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 
-namespace PrimerXamarin
+namespace PrimerXamarin.Pages
 {	
-	public partial class paginaPrincipal : ContentPage
+	public partial class Detail : ContentPage
 	{	
-		public paginaPrincipal ()
+		public Detail ()
 		{
 			InitializeComponent ();
 		}
