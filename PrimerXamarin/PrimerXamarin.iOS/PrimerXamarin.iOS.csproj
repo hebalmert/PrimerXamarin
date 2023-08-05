@@ -135,5 +135,7 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\NexxtLogo.jpeg" />
+    <BundleResource Include="Resources\ic_add_Xam.png" />
+    <BundleResource Include="Resources\ic_folder.png" />
   </ItemGroup>
 </Project>

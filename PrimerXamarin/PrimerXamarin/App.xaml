@@ -5,10 +5,29 @@
     <Application.Resources>
         <ResourceDictionary>
             <!-- Creacion de Estilos para los Labels -->
+            <Style x:Key="ColorBlanco" TargetType="Button">
+                <Setter Property = "TextColor" Value="White" />
+            </Style>
+
+
             <Style x:Key="EstiloLabel" TargetType="Label">
                 <Setter Property="FontSize" Value="20" />
                 <Setter Property = "FontAttributes" Value="Bold" />
-                <Setter Property = "TextColor" Value="DarkGray" />
+                
+            </Style>
+            <Style BasedOn="{StaticResource ColorBlanco}" x:Key="BtnPrimary" TargetType="Button">
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property = "FontAttributes" Value="Bold" />
+                <Setter Property = "BackgroundColor" Value="DarkBlue"/>
+            </Style>
+            <Style BasedOn="{StaticResource ColorBlanco}" x:Key="BtnSuccess" TargetType="Button">
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property = "FontAttributes" Value="Bold" />
+                <Setter Property = "BackgroundColor" Value="DarkGreen"/>
+            </Style>
+            <Style TargetType="ContentPage" ApplyToDerivedTypes="True">
+                <Setter Property="Padding" Value="10"/>
+
             </Style>
         </ResourceDictionary>
     </Application.Resources>

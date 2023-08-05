@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="PrimerXamarin.Pages.Sucursal">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Registrar" x:Name="ToolBarRegistrar" Clicked="ToolBarRegistrar_Clicked" Priority="1" Order="Secondary"/>
+        <ToolbarItem Text="Ver" x:Name="ToolBarVer" Priority="0" Clicked="ToolBarVer_Clicked" Order="Secondary" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout></StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+

@@ -11,7 +11,7 @@ namespace PrimerXamarin
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage (new MainPage());
+            MainPage = new NavigationPage (new Marca());
         }
 
         protected override void OnStart ()

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="PrimerXamarin.Pages.Modelo">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Registrar Marca" Order="Primary" Priority="1" IconImageSource="ic_add_Xam.png" Name="RegistrarMarca" Clicked="RegistrarMarca_Clicked"/>
+         <ToolbarItem Text="Ver Marca" Order="Primary" Priority="0" IconImageSource="ic_folder.png" Name="VerMarca" Clicked="VerMarca_Clicked"/>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

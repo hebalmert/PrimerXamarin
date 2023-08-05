@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="PrimerXamarin.Pages.FormBus">
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView>
+                <Grid ColumnDefinitions="*,2*"
+                  RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto,Auto, Auto, Auto, Auto, Auto, Auto">
+                    <Label Text="{Binding TituloForm}" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Center" Style="{StaticResource EstiloLabel}"/>
+
+                    <Label Text="Sucursal" Grid.Column="0" Grid.Row="1" VerticalOptions="Center"/>
+                    <Picker Grid.Column="1" Grid.Row="1">
+                        <Picker.Items>
+                            <x:String>-- Seleccione --</x:String>
+                            <x:String>Sucursal 1</x:String>
+                            <x:String>Sucursal 2</x:String>
+                            <x:String>Sucursal 3</x:String>
+                        </Picker.Items>
+                    </Picker>
+
+                    <Label Text="Tipo Bus" Grid.Column="0" Grid.Row="2" VerticalOptions="Center"/>
+                    <Picker Grid.Column="1" Grid.Row="2">
+                        <Picker.Items>
+                            <x:String>-- Seleccione --</x:String>
+                            <x:String>Tipo Bus 1</x:String>
+                            <x:String>Tipo Bus 2</x:String>
+                            <x:String>Tipo Bus 3</x:String>
+                        </Picker.Items>
+                    </Picker>
+
+                    <Label Text="Placa" Grid.Column="0" Grid.Row="3" VerticalOptions="Center"/>
+                    <Entry Grid.Column="1" Grid.Row="3" Keyboard="Text"/>
+
+                    <Label Text="Fecha Compra" Grid.Column="0" Grid.Row="4" VerticalOptions="Center"/>
+                    <DatePicker Grid.Column="1" Grid.Row="4" Format="dd/MM/yyyy"/>
+
+                    <Label Text="Modelo" Grid.Column="0" Grid.Row="5" VerticalOptions="Center"/>
+                    <Picker Grid.Column="1" Grid.Row="5">
+                        <Picker.Items>
+                            <x:String>-- Seleccione --</x:String>
+                            <x:String>Modelo 1</x:String>
+                            <x:String>Modelo 2</x:String>
+                            <x:String>Modelo 3</x:String>
+                        </Picker.Items>
+                    </Picker>
+
+                    <Label Text="Numero Fila" Grid.Column="0" Grid.Row="6" VerticalOptions="Center"/>
+                    <Entry Grid.Column="1" Grid.Row="6" Keyboard="Numeric"/>
+
+                    <Label Text="Numero Columna" Grid.Column="0" Grid.Row="7" VerticalOptions="Center"/>
+                    <Entry Grid.Column="1" Grid.Row="7" Keyboard="Numeric"/>
+
+                    <Label Text="Descripcion" Grid.Column="0" Grid.Row="8" VerticalOptions="Center"/>
+                    <Editor HeightRequest="100" Grid.Column="1" Grid.Row="8"/>
+
+                    <Label Text="Observacion" Grid.Column="0" Grid.Row="9" VerticalOptions="Center"/>
+                    <Editor HeightRequest="100" Grid.Column="1" Grid.Row="9" />
+
+                    <Label Text="Marca" Grid.Column="0" Grid.Row="10" VerticalOptions="Center"/>
+                    <Picker Grid.Column="1" Grid.Row="10">
+                        <Picker.Items>
+                            <x:String>-- Seleccione --</x:String>
+                            <x:String>Marca 1</x:String>
+                            <x:String>Marca 2</x:String>
+                            <x:String>Marca 3</x:String>
+                        </Picker.Items>
+                    </Picker>
+
+                    <StackLayout Grid.Column="0" Grid.Row="11" Grid.ColumnSpan="2" HorizontalOptions="Center" Orientation="Horizontal">
+                        <Button Text="Aceptar" HorizontalOptions="Center" Style="{StaticResource BtnPrimary}"/>
+                        <Button Text="Regresar" x:Name="btnRegresar" Clicked="btnRegresar_Clicked" HorizontalOptions="Center" Style="{StaticResource BtnSuccess}"/>
+                    </StackLayout>
+                </Grid>
+
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+

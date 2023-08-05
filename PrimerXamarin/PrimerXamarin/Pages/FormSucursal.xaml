@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="PrimerXamarin.Pages.FormSucursal">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid ColumnDefinitions="*,2*" RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto,Auto">
+                <Label Text="{Binding TituloForm}" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Center" Style="{StaticResource EstiloLabel}"/>
+
+                <Label Text="Nombre" Grid.Column="0" Grid.Row="1" VerticalOptions="Center"/>
+                <Entry Grid.Column="1" Grid.Row="1" VerticalOptions="Center" Keyboard="Text"/>
+
+                <Label Text="Direccion" Grid.Column="0" Grid.Row="2"/>
+                <Editor HeightRequest="100" Grid.Column="1" Grid.Row="2" Keyboard="Text"/>
+
+                <Label Text="Telefono" Grid.Column="0" Grid.Row="3"/>
+                <Entry Grid.Column="1" Grid.Row="3" Keyboard="Telephone"/>
+
+                <Label Text="Email" Grid.Column="0" Grid.Row="4"/>
+                <Entry Grid.Column="1" Grid.Row="4" Keyboard="Email"/>
+
+                <Label Text="Fecha Apertura" Grid.Column="0" Grid.Row="5"/>
+                <DatePicker Grid.Column="1" Grid.Row="5" Format="dd/MM/yyyy"/>
+
+                <StackLayout Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="2" HorizontalOptions="Center" Orientation="Horizontal">
+                    <Button Text="Aceptar" HorizontalOptions="Center" Style="{StaticResource BtnPrimary}"/>
+                    <Button Text="Regresar" x:Name="btnRegresar" Clicked="btnRegresar_Clicked" HorizontalOptions="Center" Style="{StaticResource BtnSuccess}"/>
+                </StackLayout>
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+
